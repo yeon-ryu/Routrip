@@ -1,0 +1,68 @@
+$iPad: 'screen and (max-width : 768px)';
+$iPadPro: 'screen and (min-width : 769px) and (max-width : 1024px) ';
+$desktop: 'screen and (min-width : 1025px)';
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.body {
+    padding-top: 80px;
+}
+
+.search-desktop {
+    @media #{$iPad, $iPadPro} {
+        display: none;
+    }
+
+    @media #{$desktop} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    margin-top: 10px;
+}
+
+
+//posting box
+.posting-box {
+    background-color: white;
+    padding: 3vh 0;
+
+    .posting-component {
+        margin: 70px 0;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 3px 2px 20px;
+    }
+
+    .postings {
+        margin: auto;
+
+        @media #{$iPad} {
+            width: 90vw;
+        }
+
+        @media #{$iPadPro, $desktop} {
+            width: 550px;
+        }
+    }
+}
