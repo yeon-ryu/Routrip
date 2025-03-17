@@ -16,7 +16,7 @@
 
 - Spring Boot
     - Spring Web
-    - Spring Bood DevTools
+    - Spring Boot DevTools
 - Maven
 - Java
 
